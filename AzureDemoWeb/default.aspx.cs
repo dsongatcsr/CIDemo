@@ -11,7 +11,7 @@ namespace AzureDemoWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ssZ");
+            Label1.Text = string.Format("The current time is {0:yyyy-MM-dd HH:mm:ss}", DateTime.Now); //.ToString("");
         }
     }
 }
